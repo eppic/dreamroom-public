@@ -3,7 +3,6 @@
 This project was made at FH Salzburg in collaboration with Lukas M.
 It is completely made in Next.js.
 
-Try it out now: https://dreamroom-alpha.vercel.app/
 
 ## Screenshots
 
