@@ -3,6 +3,7 @@
 import { PlacedFurniture } from '@/types/furniture';
 import { furnitureLibrary } from '@/data/furnitureLibrary';
 import Image from 'next/image';
+import { asset } from '@/lib/asset';
 import Link from 'next/link';
 
 interface Props {
@@ -48,7 +49,7 @@ export default function Toolbar({ selected, selectedId, furniture, onRotate, onD
             isDisabled ? 'opacity-50 cursor-not-allowed' : ''
           }`}
         >
-          <Image src="/rotate-left.svg" alt="Rotate Left" className="w-4 h-4" width={16} height={16} />
+          <Image src={asset("/rotate-left.svg")} alt="Rotate Left" className="w-4 h-4" width={16} height={16} />
         </button>
 
         <button
@@ -58,7 +59,7 @@ export default function Toolbar({ selected, selectedId, furniture, onRotate, onD
             isDisabled ? 'opacity-50 cursor-not-allowed' : ''
           }`}
         >
-          <Image src="/rotate-right.svg" alt="Rotate Right" className="w-4 h-4" width={16} height={16} />
+          <Image src={asset("/rotate-right.svg")} alt="Rotate Right" className="w-4 h-4" width={16} height={16} />
         </button>
       </div>
       
